@@ -15,3 +15,23 @@ class Stack(object):
 
 	def isEmpty(self):
 		return self.items == []
+
+
+class Queue(object):
+
+	self.items = []
+
+	def enqueue(self, elem):
+		self.items.index(0, elem)
+
+	def dequeue(self):
+		return self.items.pop()
+
+	def size(self):
+		return len(self.items)
+
+	def isEmpty(self):
+		return self.items == []
+
+	def peak(self):
+		return self.items[self.items[0]]
