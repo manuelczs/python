@@ -1,5 +1,7 @@
 class Stack(object):
-	self.items = []
+	
+	def __init__(self):
+		self.items = []
 
 	def push(self, elem):
 		self.items.append(elem)
@@ -19,7 +21,8 @@ class Stack(object):
 
 class Queue(object):
 
-	self.items = []
+	def __init__(self):
+		self.items = []
 
 	def enqueue(self, elem):
 		self.items.index(0, elem)
@@ -35,3 +38,12 @@ class Queue(object):
 
 	def peak(self):
 		return self.items[self.items[0]]
+
+
+class Dequeue(object):
+
+	def __init__(self):
+		self.items = []
+
+	def isEmpty(self):
+		return self.items == []
